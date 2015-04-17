@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>C++/Python #n</title>
+</head>
+<body>
+  <h1>C++/Python seminar #n</h1>
+  <h2>Info</h2>
+  <ul>
+    <li>Held on : <time datetime="2015-04-17">17 Apr 2015</time></li>
+    <li>Tags : C++</li>
+    <li>Log : <a href="http://lingr.com/room/ProgStatGenet/archives/2015/04/17">lingr</a></li>
+  </ul>
+  <h2>What we did</h2>
+  <ul>
+    <li>Install R packages to work with C++ functions:
+      <ul>
+        <li>Rcpp</li>
+        <li>devtools</li>
+      </ul>
+    </li>
+    <li>Try calling simple functions written in C++ from R</li>
+  </ul>
+  <h2>Summary</h2>
+  <p>
+    Calling C++ functions from R:
+    <script src="https://gist.github.com/anonymous/1e040a5d39b48eac2c60.js"></script>
+    Save this anywhere with any name (ex. <code>Rcpp.cpp</code>), and call like this:
+    <script src="https://gist.github.com/anonymous/4aad6d558cfd21266894.js"></script>
+
+    Note that the <code>// [[Rcpp::export]]</code> in Rcpp.cpp is necessary each any functions you want to export.
+  </p>
+
+  <p>Other examples for exporting values of different data types from Cpp to R:
+    <script src="https://gist.github.com/anonymous/053591e3d9554afcb5b8.js"></script>
+    Matrix:
+   <script src="https://gist.github.com/anonymous/fc645554bcdc83612468.js"></script> 
+  </p>
+  <p>
+    You can embed c++ codes in R code, too:
+    <script src="https://gist.github.com/anonymous/50753d5b3fd74ea1677d.js"></script>
+  </p>
+  <p>
+    Making use of Cpp <code>std::random</code>:
+    <script src="https://gist.github.com/anonymous/a7672ad98b23fcc657e0.js"></script>
+  </p>
+  <h2>Tasks</h2>
+  <ul>
+    <li>
+      <blockquote>Let's make a cpp function that make random walk steps in n-dimensional lattice without using points already visited. No. steps : 10^6.</blockquote>
+    </li>
+    <li>
+      <blockquote>
+        Let cpp generate uniform random numbers and return them as a vector to R and show them on R. 
+      </blockquote>
+    </li>
+  </ul>
+  <h2>Links</h2>
+  <ul>
+    <li><a href="http://www.rcpp.org/">rcpp.org</a></li>
+    <li><a href="https://github.com/RcppCore/Rcpp">github: rcpp</a></li>
+    <li><a href="http://www.cplusplus.com/reference/random/normal_distribution/">Reference for cpp std::random_distribution</a></li>
+    <li></li>
+  </ul>
+  <h2>Other notes</h2>
+  <ul>
+    <li>次回は来週，ゴールデンウィーク中はお休み</li>
+  </ul>
+</body>
+</html>
