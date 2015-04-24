@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>C++/Python #3</title>
+</head>
+<body>
+  <h1>C++/Python seminar #3</h1>
+  <h2>Info</h2>
+  <ul>
+    <li>Held on : <time datetime="2015-04-24">24 Apr 2015</time></li>
+    <li>Tags : Python (mainly)</li>
+    <li>Log : <a href="http://lingr.com/room/ProgStatGenet/archives/2015/04/24">lingr</a></li>
+  </ul>
+  <h2>What we did</h2>
+  <ul>
+    <li>Saw how various kinds of random distributions can be generated in python (and c++)</li>
+  </ul>
+  <h2>Summary</h2>
+  <p>
+    There are some ways to generate random numbers in python. One way is to use the
+    <a href="https://docs.python.org/3/library/random.html"><code>random</code> module</a> in the standard library:
+    <script src="https://gist.github.com/anonymous/da528e1a41d4281f1e50.js"></script>
+  </p>
+  <p>
+    or you can use
+     numpy.random, like: <script src="https://gist.github.com/lesguillemets/8ef26f1ad52c0351d0a3.js"></script>
+  </p>
+
+  <p>
+    Unrelated to the generation of random numbers, note the
+    <a href="http://stackoverflow.com/questions/135041">difference between <code>range</code> and <code>xrange</code> functions</a> in python 2.x.
+    In short, in python 2.x, <code>range</code> creates a list while <code>xrange</code> creates an enumerator.
+    In python 3, <code>range</code> returns a <a href="https://docs.python.org/3/library/stdtypes.html#range"><code>range</code> object</a>,
+    which works like an enumerator. <code>xrange</code> is no longer defined.
+  </p>
+  <h2>Tasks</h2>
+  <h2>Links</h2>
+  <ul>
+    <li>Reference for random functions:
+      <ul>
+        <li>
+          <a href="https://docs.python.org/3/library/random.html">Python Standard Library</a>
+        </li>
+        <li><a href="http://docs.scipy.org/doc/numpy/reference/routines.random.html#random-generator">Numpy</a></li>
+        <li><a href="http://www.cplusplus.com/reference/random/">C++ std</a></li>
+      </ul>
+    </li>
+    <li><a href="http://mathesaurus.sourceforge.net/r-numpy.html">NumPy for R (and S-Plus) users – Mathesaurus</a></li>
+    <li><a href="http://www.numpy.org/">Numpy homepage</a></li>
+  </ul>
+  <h2>Other notes</h2>
+</body>
+</html>
