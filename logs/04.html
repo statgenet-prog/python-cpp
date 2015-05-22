@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>C++/Python #4</title>
+</head>
+<body>
+  <h1><a href="../index.html">C++/Python seminar</a> #4</h1>
+  <h2>Info</h2>
+  <ul>
+    <li>Held on : <time datetime="2015-05-15">15 May 2015</time></li>
+    <li>Tags : cpp</li>
+    <li>Log : <a href="http://lingr.com/room/ProgStatGenet/archives/2015/05/15">lingr</a></li>
+  </ul>
+  <h2>What we did</h2>
+  <ul>
+    <li> Installed, or had a hard time installing,
+      <a href="http://arma.sourceforge.net/docs.html">Armadillo,</a>
+    a C++ linear algebra library.
+    </li>
+  </ul>
+  <h2>Summary</h2>
+  <p>
+    Install armadillo. Download the source, and follow the instructions.
+    On linux with dependencies (cmake etc.) already installed:
+    <script src="https://gist.github.com/lesguillemets/c972732ac1a1e53406f8.js"></script>
+    and if everything works fine,
+    <script src="https://gist.github.com/lesguillemets/4979560e8556dd8111bf.js"></script>
+  </p>
+
+  <p>
+    One might confront various issues. Notably, g++ (or other compilers) might not search for the directory
+    where armadillo is installed by default. You can <a href="http://stackoverflow.com/questions/12654013">tell g++ to search for a directory</a>.
+  </p>
+
+  <p>
+    Another option you might have to specify is <code>-DARMA_DONT_USE_WRAPPER</code>. Possibly like this:
+    <pre><code>
+      g++ -I/usr/local/include example1.cpp -o example1 -O2 -I /home/blah/armadillo-5.100.2/include -DARMA_DONT_USE_WRAPPER -lblas -llapack
+    </code></pre>
+  </p>
+  <h2>Tasks</h2>
+  <h2>Links</h2>
+  <h2>Other notes</h2>
+</body>
+</html>
